@@ -10,4 +10,4 @@ def test_get_parser():
 
 
 def test_smoke_main():
-assert main([]) == 0
+    assert main([]) == 0
