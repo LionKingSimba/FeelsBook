@@ -2,7 +2,7 @@
 
 import argparse
 
-from undiscord.server.__main__ import get_parser, main
+from feelsbook.server.__main__ import get_parser, main
 
 
 def test_get_parser():
