@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-"""undiscord setup.py"""
+"""feelsbook setup.py"""
 
 import codecs
 import os
@@ -21,7 +21,7 @@ def find_version(*file_paths):
     raise RuntimeError("Unable to find a valid version")
 
 
-VERSION = find_version("undiscord", "__init__.py")
+VERSION = find_version("feelsbook", "__init__.py")
 
 
 class Pylint(test):
@@ -29,7 +29,7 @@ class Pylint(test):
 
     def initialize_options(self):
         test.initialize_options(self)
-        self.pylint_args = "undiscord --persistent=y --rcfile=.pylintrc --output-format=colorized"
+        self.pylint_args = "feelsbook --persistent=y --rcfile=.pylintrc --output-format=colorized"
 
     def run_tests(self):
         import shlex
@@ -43,7 +43,7 @@ class PyTest(test):
 
     def initialize_options(self):
         test.initialize_options(self)
-        self.pytest_args = "-v --cov={}".format("undiscord")
+        self.pytest_args = "-v --cov={}".format("feelsbook")
 
     def run_tests(self):
         import shlex
