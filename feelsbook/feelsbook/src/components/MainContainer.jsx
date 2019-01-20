@@ -3,6 +3,8 @@ import './css/MainContainer.css';
 import WritePage from './WritePage';
 import { Card } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
+import HistoryPage from './HistoryPage';
+import StatisticsPage from './StatisticsPage';
 
 class MainContainer extends Component {
 
@@ -16,6 +18,10 @@ class MainContainer extends Component {
   shouldRenderTab = () => {
     if (this.state.currentTab === 'write') {
       return <WritePage/>
+    } else if (this.state.currentTab === 'history') {
+      return <HistoryPage></HistoryPage>;
+    } else if (this.state.currentTab === 'statistics') {
+      return <StatisticsPage></StatisticsPage>;
     } else {
       return null;
     }
