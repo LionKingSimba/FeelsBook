@@ -10,4 +10,4 @@ def test_get_parser():
 
 
 def test_smoke_main():
-    assert main([]) == 0
+    assert main(['test', '-k', '123', '-f', 'adf']) == 0
