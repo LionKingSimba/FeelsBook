@@ -1,0 +1,456 @@
+{
+  "document_tone": {
+    "tones": [
+      {
+        "score": 0.519671,
+        "tone_id": "analytical",
+        "tone_name": "Analytical"
+      }
+    ]
+  },
+  "sentences_tone": [
+    {
+      "sentence_id": 0,
+      "text": "<!DOCTYPE html>",
+      "tones": []
+    },
+    {
+      "sentence_id": 1,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 2,
+      "text": "<html lang=\"en\">",
+      "tones": []
+    },
+    {
+      "sentence_id": 3,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 4,
+      "text": "  <head>",
+      "tones": []
+    },
+    {
+      "sentence_id": 5,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 6,
+      "text": "    <meta charset=\"utf-8\" />",
+      "tones": []
+    },
+    {
+      "sentence_id": 7,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 8,
+      "text": "    <link rel=\"shortcut icon\" href=\"/favicon.ico\"",
+      "tones": [
+        {
+          "score": 0.895415,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        }
+      ]
+    },
+    {
+      "sentence_id": 9,
+      "text": "/>",
+      "tones": []
+    },
+    {
+      "sentence_id": 10,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 11,
+      "text": "    <meta",
+      "tones": []
+    },
+    {
+      "sentence_id": 12,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 13,
+      "text": "      name=\"viewport\"",
+      "tones": []
+    },
+    {
+      "sentence_id": 14,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 15,
+      "text": "      content=\"width=device-width, initial-scale=1, shrink-to-fit=no\"",
+      "tones": [
+        {
+          "score": 0.542909,
+          "tone_id": "joy",
+          "tone_name": "Joy"
+        },
+        {
+          "score": 0.801827,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        }
+      ]
+    },
+    {
+      "sentence_id": 16,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 17,
+      "text": "    />",
+      "tones": []
+    },
+    {
+      "sentence_id": 18,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 19,
+      "text": "    <meta name=\"theme-color\" content=\"#000000\" />",
+      "tones": [
+        {
+          "score": 0.882284,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        }
+      ]
+    },
+    {
+      "sentence_id": 20,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 21,
+      "text": "    <!--",
+      "tones": []
+    },
+    {
+      "sentence_id": 22,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 23,
+      "text": "      manifest.json",
+      "tones": [
+        {
+          "score": 0.97759,
+          "tone_id": "confident",
+          "tone_name": "Confident"
+        }
+      ]
+    },
+    {
+      "sentence_id": 24,
+      "text": "provides metadata used when your web app is added to the",
+      "tones": []
+    },
+    {
+      "sentence_id": 25,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 26,
+      "text": "      homescreen on Android.",
+      "tones": []
+    },
+    {
+      "sentence_id": 27,
+      "text": "See https://developers.google.com/web/fundamentals/web-app-manifest/",
+      "tones": []
+    },
+    {
+      "sentence_id": 28,
+      "text": "-->",
+      "tones": []
+    },
+    {
+      "sentence_id": 29,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 30,
+      "text": "    <link rel=\"manifest\" href=\"/manifest.json\"",
+      "tones": [
+        {
+          "score": 0.842108,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        },
+        {
+          "score": 0.942582,
+          "tone_id": "confident",
+          "tone_name": "Confident"
+        }
+      ]
+    },
+    {
+      "sentence_id": 31,
+      "text": "/>",
+      "tones": []
+    },
+    {
+      "sentence_id": 32,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 33,
+      "text": "    <!--",
+      "tones": []
+    },
+    {
+      "sentence_id": 34,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 35,
+      "text": "      Notice the use of  in the tags above.",
+      "tones": [
+        {
+          "score": 0.762356,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        }
+      ]
+    },
+    {
+      "sentence_id": 36,
+      "text": "It will be replaced with the URL of the `public` folder during the build.",
+      "tones": []
+    },
+    {
+      "sentence_id": 37,
+      "text": "Only files inside the `public` folder can be referenced from the HTML.",
+      "tones": [
+        {
+          "score": 0.762356,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        }
+      ]
+    },
+    {
+      "sentence_id": 38,
+      "text": "Unlike \"/favicon.ico\"",
+      "tones": []
+    },
+    {
+      "sentence_id": 39,
+      "text": "or \"favicon.ico\",",
+      "tones": [
+        {
+          "score": 0.994446,
+          "tone_id": "tentative",
+          "tone_name": "Tentative"
+        }
+      ]
+    },
+    {
+      "sentence_id": 40,
+      "text": "\"/favicon.ico\"",
+      "tones": []
+    },
+    {
+      "sentence_id": 41,
+      "text": "will",
+      "tones": []
+    },
+    {
+      "sentence_id": 42,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 43,
+      "text": "      work correctly both with client-side routing and a non-root public URL.",
+      "tones": [
+        {
+          "score": 0.579436,
+          "tone_id": "confident",
+          "tone_name": "Confident"
+        }
+      ]
+    },
+    {
+      "sentence_id": 44,
+      "text": "Learn how to configure a non-root public URL by running `npm run build`.",
+      "tones": [
+        {
+          "score": 0.642915,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        }
+      ]
+    },
+    {
+      "sentence_id": 45,
+      "text": "-->",
+      "tones": []
+    },
+    {
+      "sentence_id": 46,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 47,
+      "text": "    <title>React App</title>",
+      "tones": []
+    },
+    {
+      "sentence_id": 48,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 49,
+      "text": "  </head>",
+      "tones": []
+    },
+    {
+      "sentence_id": 50,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 51,
+      "text": "  <body>",
+      "tones": []
+    },
+    {
+      "sentence_id": 52,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 53,
+      "text": "    <noscript>You need to enable JavaScript to run this app.</noscript>",
+      "tones": []
+    },
+    {
+      "sentence_id": 54,
+      "text": "<div id=\"root\"></div>",
+      "tones": []
+    },
+    {
+      "sentence_id": 55,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 56,
+      "text": "    <!--",
+      "tones": []
+    },
+    {
+      "sentence_id": 57,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 58,
+      "text": "      This HTML file is a template.",
+      "tones": []
+    },
+    {
+      "sentence_id": 59,
+      "text": "If you open it directly in the browser, you will see an empty page.",
+      "tones": []
+    },
+    {
+      "sentence_id": 60,
+      "text": "You can add webfonts, meta tags, or analytics to this file.",
+      "tones": [
+        {
+          "score": 0.786991,
+          "tone_id": "tentative",
+          "tone_name": "Tentative"
+        }
+      ]
+    },
+    {
+      "sentence_id": 61,
+      "text": "The build step will place the bundled scripts into the <body> tag.",
+      "tones": []
+    },
+    {
+      "sentence_id": 62,
+      "text": "To begin the development, run `npm start` or `yarn start`.",
+      "tones": [
+        {
+          "score": 0.822231,
+          "tone_id": "tentative",
+          "tone_name": "Tentative"
+        }
+      ]
+    },
+    {
+      "sentence_id": 63,
+      "text": "To create a production bundle, use `npm run build` or `yarn build`.",
+      "tones": [
+        {
+          "score": 0.75152,
+          "tone_id": "tentative",
+          "tone_name": "Tentative"
+        },
+        {
+          "score": 0.638807,
+          "tone_id": "analytical",
+          "tone_name": "Analytical"
+        }
+      ]
+    },
+    {
+      "sentence_id": 64,
+      "text": "-->",
+      "tones": []
+    },
+    {
+      "sentence_id": 65,
+      "text": "",
+      "tones": []
+    },
+    {
+      "sentence_id": 66,
+      "text": "  <script src=\"/static/js/bundle.js\"></script><script src=\"/static/js/1.chunk.js\"></script><script",
+      "tones": []
+    },
+    {
+      "sentence_id": 67,
+      "text": "src=\"/static/js/main.chunk.js\"></script><script",
+      "tones": []
+    },
+    {
+      "sentence_id": 68,
+      "text": "src=\"/main.2e04a549e936155a70e0.hot-update.js\"></script></body>",
+      "tones": []
+    },
+    {
+      "sentence_id": 69,
+      "text": "</html>",
+      "tones": []
+    }
+  ]
+}
