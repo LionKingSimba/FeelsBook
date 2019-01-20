@@ -11,32 +11,37 @@ class MainContainer extends Component {
     this.state = {
       currentTab: 'write'
     }
-  }
+  } 
 
-  changeTab(tab) {
-    this.setState({
-      currentTab: tab
-    })
+  shouldRenderTab = () => {
+    if (this.state.currentTab === 'write') {
+      return <WritePage/>
+    } else {
+      return null;
+    }
   }
 
   render() {
     return (
       <Card className='MainContainer'>
         <Card.Header>
-          <Nav variant="tabs" defaultActiveKey="#first">
+          <Nav variant="tabs" defaultActiveKey="#write">
             <Nav.Item>
-              <Nav.Link href="#first">Write</Nav.Link>
+              <Nav.Link href="#write" onClick={() => this.setState({ currentTab: 'write' })}>Write</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#link">History</Nav.Link>
+              <Nav.Link href="#history" onClick={() => this.setState({ currentTab: 'history' })}>History</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="#disabled">Statistics</Nav.Link>
+              <Nav.Link href="#statistics" onClick={() => {
+                this.setState({ currentTab: 'statistics' })
+                console.log(this.state.currentTab)
+              }}>Statistics</Nav.Link>
             </Nav.Item>
           </Nav>
         </Card.Header>
         <Card.Body>
-          <WritePage></WritePage>
+          {this.shouldRenderTab()}
         </Card.Body>
       </Card>
     );
