@@ -91,7 +91,6 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "feelsbook-analyze = feelsbook.server.__main__:main"
         ],
     },
     cmdclass={"test": PyTest, "lint": Pylint},
