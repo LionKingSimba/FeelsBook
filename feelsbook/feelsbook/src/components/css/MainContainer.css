@@ -1,4 +1,6 @@
 .MainContainer {
     background-color: #ffe49b;
     margin: 1rem;
+    height: 700px;
+    width: 80%;
 }

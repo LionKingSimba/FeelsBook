@@ -28,7 +28,7 @@ class MainContainer extends Component {
               <Form.Control placeholder="Title" />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Control as="textarea" rows="3" placeholder="Write Here!"/>
+              <Form.Control as="textarea" rows="20" placeholder="Write Here!"/>
             </Form.Group>
           </Form>
           <Button variant="primary">Save Entry</Button>
