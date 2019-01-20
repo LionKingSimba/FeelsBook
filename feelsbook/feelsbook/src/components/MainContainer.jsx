@@ -29,7 +29,7 @@ class MainContainer extends Component {
             <Form.Group controlId="exampleForm.ControlInput1">
               <Row>
                 <Col sm={10}>
-                  <Form.Control placeholder="Title" />
+                  <Form.Control placeholder="Title" className="light-transparency"/>
                 </Col>
                 <Col sm={2}>
                   <Button variant="primary">Save Entry</Button>
@@ -37,7 +37,7 @@ class MainContainer extends Component {
               </Row>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Control as="textarea" rows="10" placeholder="Write Here!"/>
+              <Form.Control as="textarea" rows="10" placeholder="Write Here!" className="light-transparency"/>
             </Form.Group>
           </Form>
         </Card.Body>
