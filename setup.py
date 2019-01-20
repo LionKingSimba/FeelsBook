@@ -61,7 +61,7 @@ def readme():
 setup(
     name="FeelsBook",
     version=VERSION,
-    description="Project for HakED 2019",
+    description="Project for HackED 2019",
     long_description=readme(),
     author="Ryan Furrer",
     author_email="rfurrer@ualberta.ca",
@@ -87,6 +87,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
+            "feelsbook-analyze = feelsbook.server.__main__:main"
         ],
     },
     cmdclass={"test": PyTest, "lint": Pylint},
