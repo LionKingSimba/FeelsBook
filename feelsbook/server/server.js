@@ -7,13 +7,13 @@
 
 var sys = require("sys"),
 my_http = require("http");
-my_http.createServer(function(request,response){
-  sys.puts("I got kicked");
-  response.writeHeader(200, {"Content-Type": "text/plain"});
-  response.write("Hello World");
-  response.end();
-}).listen(8080);
-sys.puts("Server Running on 8080"); 
+// my_http.createServer(function(request,response){
+//   sys.puts("I got kicked");
+//   response.writeHeader(200, {"Content-Type": "text/plain"});
+//   response.write("Hello World");
+//   response.end();
+// }).listen(8080);
+// sys.puts("Server Running on 8080"); 
 
 var ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
 
@@ -40,17 +40,17 @@ var clienturl = 'http://localhost:3000/'
 // xhr.open('GET', clienturl, true);
 // var text = xhr.responseText;
 
-my_http.get(clienturl, function(resp) {
-    var text = "";    
-    resp.on('data', function(chunk) {
-        text += chunk;
-    });
-    resp.on('end', function() {
-        console.log("THIS IS THE TEXT");
-        console.log(text);
-        watson(text);
-    });
-});
+// my_http.get(clienturl, function(resp) {
+//     var text = "";    
+//     resp.on('data', function(chunk) {
+//         text += chunk;
+//     });
+//     resp.on('end', function() {
+//         console.log("THIS IS THE TEXT");
+//         console.log(text);
+//         watson(text);
+//     });
+// });
 
 
 //https://theusualstuff.com/handle-form-data-express-get-post-method/
@@ -62,24 +62,22 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({extended:false}));
 // app.use(bodyParser.json());
 
-app.get('/index.html', function(req, res) {
-    res.sendFile(__dirname + "/" + "index.html");
+app.get('http://localhost:3000/', function(req, res) {
+    res.sendFile("http://localhost:3000/");
 });
 
 app.post('/', function(req, res){
     response = {
-        first_name : req.body.first_name,
-        last_name : req.body.last_name,
-        gender: req.body.gender
+        text: req.body.text
         }; 
     console.log(response);
 });
 
-// var server = app.listen(8080, function(){
-//     var host = server.address().address;
-//     var port = server.address().port;
-//     console.log("server listening at http://%s:%s", host, port);
-// });
+var server = app.listen(8080, function(){
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log("server listening at http://%s:%s", host, port);
+});
 
 // router.get('/', function(req, res, next) {
 //     res.render('index', {title:'Test',condition:false});
