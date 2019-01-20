@@ -4,11 +4,11 @@ import { Button } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
-// import axios from 'axios';
+import axios from 'axios';
 
 const ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
 
-const keyfile = require('../key.json');
+const keyfile = require('./key.json');
 
 const toneAnalyzer = new ToneAnalyzerV3({
     version: '2017-09-21',
@@ -24,17 +24,26 @@ class WritePage extends Component {
             currentTab: 'write',
             moodText: ""
         }
+
+        var ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
+        var keyfile = require('./key.json');
+
+        var toneAnalyzer = new ToneAnalyzerV3({
+            version: '2017-09-21',
+            iam_apikey: keyfile.key,
+            url: 'https://gateway.watsonplatform.net/tone-analyzer/api'
+        });
     } 
 
     getMoods = () => {
         console.log('hello world');
         console.log(this.state.moodText);
-        const toneVar = toneAnalyzer.tone(
+        toneAnalyzer.tone(
             {
-                tone_input: 'Greetings from the Watson Developer Cloud Node SDK, we are pleased to say hello!',
+                tone_input: this.state.moodText,
                 content_type: 'text/plain'
             },
-             (err, tone) => {
+            function (err, tone) {
                 if (err) {
                     console.log(err);
                 } else {
