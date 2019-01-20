@@ -37,7 +37,7 @@ class MainContainer extends Component {
               </Row>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Control as="textarea" rows="10" placeholder="Write Here!" className="light-transparency"/>
+              <Form.Control as="textarea" rows="13" placeholder="Write Here!" className="light-transparency"/>
             </Form.Group>
           </Form>
         </Card.Body>
