@@ -21,7 +21,7 @@ class WritePage extends Component {
                     </Row>
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
-                    <Form.Control as="textarea" rows="13" placeholder="Write Here!" className="light-transparency" />
+                    <Form.Control as="textarea" rows="15" placeholder="Write Here!" className="light-transparency" />
                 </Form.Group>
             </Form>
         );
