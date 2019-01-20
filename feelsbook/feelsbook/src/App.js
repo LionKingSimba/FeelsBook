@@ -9,10 +9,10 @@ class App extends Component {
       <div className="App">
         {/* <Title></Title> */}
         {/* <MainContainer></MainContainer> */}
-        <form>
+        {/* <form>
           <input type="text" action="http://localhost:8080" method="POST"></input>
           <input type="submit" value="submit"></input>
-        </form>
+        </form> */}
       </div>
     );
   }

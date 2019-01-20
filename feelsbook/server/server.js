@@ -7,13 +7,13 @@
 
 var sys = require("sys"),
 my_http = require("http");
-// my_http.createServer(function(request,response){
-//   sys.puts("I got kicked");
-//   response.writeHeader(200, {"Content-Type": "text/plain"});
-//   response.write("Hello World");
-//   response.end();
-// }).listen(8080);
-// sys.puts("Server Running on 8080"); 
+my_http.createServer(function(request,response){
+  sys.puts("I got kicked");
+  response.writeHeader(200, {"Content-Type": "text/plain"});
+  response.write("Hello World");
+  response.end();
+}).listen(8080);
+sys.puts("Server Running on 8080"); 
 
 var ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
 
@@ -75,11 +75,11 @@ app.post('/', function(req, res){
     console.log(response);
 });
 
-var server = app.listen(8080, function(){
-    var host = server.address().address;
-    var port = server.address().port;
-    console.log("server listening at http://%s:%s", host, port);
-});
+// var server = app.listen(8080, function(){
+//     var host = server.address().address;
+//     var port = server.address().port;
+//     console.log("server listening at http://%s:%s", host, port);
+// });
 
 // router.get('/', function(req, res, next) {
 //     res.render('index', {title:'Test',condition:false});
