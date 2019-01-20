@@ -50,24 +50,30 @@ class WritePage extends Component {
                     console.log('tone endpoint:');
                     console.log(JSON.stringify(tone, null, 2));
                     console.log('length: ' + tone.document_tone.tones.length);
+                    var highscore = 0;
+                    var strongestTone = '';
                     for (var i = 0; i < tone.document_tone.tones.length; i++) {
                         var tone_id = tone.document_tone.tones[i].tone_id;
+                        if (tone.document_tone.tones[i].score > highscore) {
+                            highscore = tone.document_tone.tones[i].score;
+                            console.log("High score: " + highscore);
+                            strongestTone = tone.document_tone.tones[i].tone_id
+                            console.log("strongestTone: " + strongestTone);
+                        } 
                         console.log("mood: " + tone.document_tone.tones[i]);
-                        console.log("Tone score: " + tone.document_tone.tones[i].score);
-                        console.log("Tone id: " + tone.document_tone.tones[i].tone_id);
-                        if (tone_id === 'anger') {
+                        if (strongestTone === 'anger') {
                             document.body.style.backgroundColor = "red";
-                        } else if (tone_id === 'fear') {
+                        } else if (strongestTone === 'fear') {
                             document.body.style.backgroundColor = "black";
-                        } else if (tone_id === 'joy') {
+                        } else if (strongestTone === 'joy') {
                             document.body.style.backgroundColor = "yellow";
-                        } else if (tone_id === 'sadness') {
+                        } else if (strongestTone === 'sadness') {
                             document.body.style.backgroundColor = "blue";
-                        } else if (tone_id === 'analytical') {
+                        } else if (strongestTone === 'analytical') {
                             document.body.style.backgroundColor = "teal";
-                        } else if (tone_id === 'confident') {
+                        } else if (strongestTone === 'confident') {
                             document.body.style.backgroundColor = "orange";
-                        } else if (tone_id === 'tentative') {
+                        } else if (strongestTone === 'tentative') {
                             document.body.style.backgroundColor = "pink";
                         }
                     }
