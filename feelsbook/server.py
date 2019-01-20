@@ -2,11 +2,10 @@
 
 """flask/cheroot server definition"""
 
-import os
-from logging import getLogger
-from uuid import uuid4
 
-from flask import Flask, render_template
+from logging import getLogger
+
+from flask import Flask
 from flask_restplus import Resource, Api, reqparse
 
 __log__ = getLogger(__name__)
