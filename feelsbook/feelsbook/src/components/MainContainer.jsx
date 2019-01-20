@@ -4,6 +4,8 @@ import { Card } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 
 class MainContainer extends Component {
   render() {
@@ -25,13 +27,19 @@ class MainContainer extends Component {
         <Card.Body>
           <Form>
             <Form.Group controlId="exampleForm.ControlInput1">
-              <Form.Control placeholder="Title" />
+              <Row>
+                <Col sm={10}>
+                  <Form.Control placeholder="Title" />
+                </Col>
+                <Col sm={2}>
+                  <Button variant="primary">Save Entry</Button>
+                </Col>
+              </Row>
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-              <Form.Control as="textarea" rows="20" placeholder="Write Here!"/>
+              <Form.Control as="textarea" rows="10" placeholder="Write Here!"/>
             </Form.Group>
           </Form>
-          <Button variant="primary">Save Entry</Button>
         </Card.Body>
       </Card>
     );
