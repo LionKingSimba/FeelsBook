@@ -434,7 +434,7 @@
     },
     {
       "sentence_id": 66,
-      "text": "  <script src=\"/static/js/bundle.js\"></script><script src=\"/static/js/1.chunk.js\"></script><script",
+      "text": "  <script src=\"/static/js/bundle.js\"></script><script src=\"/static/js/0.chunk.js\"></script><script",
       "tones": []
     },
     {
@@ -444,7 +444,7 @@
     },
     {
       "sentence_id": 68,
-      "text": "src=\"/main.2e04a549e936155a70e0.hot-update.js\"></script></body>",
+      "text": "src=\"/main.0b4fcfeeb5ce0494cd92.hot-update.js\"></script></body>",
       "tones": []
     },
     {
