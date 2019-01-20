@@ -79,6 +79,7 @@ setup(
         "": ["README.rst"],
     },
     install_requires=[
+        "watson-developer-cloud>=2.5.1",
     ],
     tests_require=[
         "pytest",
