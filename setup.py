@@ -80,6 +80,9 @@ setup(
     },
     install_requires=[
         "watson-developer-cloud>=2.5.1",
+        "flask-restplus>=0.12.1,<1.0.0",
+        "cheroot>=6.5.4,<7.0.0",
+        "flask>=1.0.2,<2.0.0",
     ],
     tests_require=[
         "pytest",
