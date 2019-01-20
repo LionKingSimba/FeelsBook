@@ -13,13 +13,6 @@ __log__ = getLogger(__name__)
 
 APP = Flask(__name__)
 
-
-@APP.route('/', methods=["GET"])
-def index():
-    # parse request arguments
-    return render_template('index.html')
-
-
 API = Api(
     APP,
     version='1.0',
@@ -30,8 +23,8 @@ API = Api(
 
 sentiments_parser = reqparse.RequestParser()
 sentiments_parser.add_argument('token', type=str, help='Watson token')
-sentiments_parser.add_argument('filename', type=str,
-                                help="File with data")
+sentiments_parser.add_argument('data', type=str,
+                                help="Data for analysis")
 
 
 @API.route('/api/sentiments')
